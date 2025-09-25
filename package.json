@@ -1,0 +1,34 @@
+{
+  "name": "mehmood-agricultural-platform-complete",
+  "version": "1.0.0",
+  "description": "Complete Agricultural Platform - Production Ready Solution for Modern Farming",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "cd server && npm run dev",
+    "client:dev": "cd client && npm start",
+    "build": "cd client && npm run build",
+    "server:start": "cd server && npm start",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "test": "cd server && npm test && cd ../client && npm test",
+    "lint": "cd server && npm run lint && cd ../client && npm run lint"
+  },
+  "keywords": [
+    "agriculture",
+    "farming",
+    "crop-management",
+    "weather",
+    "farm-management",
+    "agricultural-technology",
+    "precision-agriculture"
+  ],
+  "author": "Moaz Mahmood",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  }
+}
